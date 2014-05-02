@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Acceso desde la barra superior -->
+        <menuitem name="Insercol" id="insercol_menu" sequence="15" />
+        <menuitem name="Configuration" id="insercol_configuration_menu"  parent="insercol_menu" />  
+    </data>
+</openerp>
