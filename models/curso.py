@@ -1,4 +1,4 @@
-#-*- encoding utf-8 -*-
+# -*- coding: utf-8 -*-
 from osv import osv,fields
 
 
@@ -15,7 +15,7 @@ class curso(osv.Model):
 	_name='gid.curso.curso'
 
 	_columns={
-		'codigo_curso':fields.char('Codigo Curso',required=True,size=10),
+		'codigo_curso':fields.char(u'Código Curso',required=True,size=10),
 		'name':fields.char('Nombre Curso',required=True,size=80),
 		'intensidad_horaria':fields.integer('Intensidad Horaria',required=True,size=3),
 		'fecha_inicio':fields.date('Fecha Inicio Curso'),
@@ -27,7 +27,7 @@ class curso(osv.Model):
 		'viernes':fields.boolean('Viernes'),
 		'sabado':fields.boolean('Sabado'),
 		'domingo':fields.boolean('Domingo'),
-		'descripcion':fields.text('Descripcion'),
+		'descripcion':fields.text(u'Descripción'),
 		#'docente_id':fields.many2one('gid.cursos.docente','Docente',required=True),
 		'state':fields.selection(estado,'Estado Curso'),
 	}
