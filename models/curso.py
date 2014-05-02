@@ -12,7 +12,7 @@ class curso(osv.Model):
 	]
 
 
-	_name='gid.curso.curso'
+	_name='gid.cursos.curso'
 
 	_columns={
 		'codigo_curso':fields.char(u'Código Curso',required=True,size=10),
@@ -28,7 +28,7 @@ class curso(osv.Model):
 		'sabado':fields.boolean('Sabado'),
 		'domingo':fields.boolean('Domingo'),
 		'descripcion':fields.text(u'Descripción'),
-		#'docente_id':fields.many2one('gid.cursos.docente','Docente',required=True),
+		'docente_id':fields.many2one('gid.cursos.docente','Docente',required=True),
 		'state':fields.selection(estado,'Estado Curso'),
 	}
 
