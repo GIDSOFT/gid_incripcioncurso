@@ -23,13 +23,16 @@
 					<field name="intensidad_horaria"/>
 					<field name="fecha_inicio"/>
 					<field name="fecha_fin"/>
-					<field name="lunes"/>
-					<field name="martes"/>
-					<field name="miercoles"/>
-					<field name="jueves"/>
-					<field name="viernes"/>
-					<field name="sabado"/>
-					<field name="domingo"/>
+					<group colspan="2" col="2">
+						<field name="lunes"/>
+						<field name="martes"/>
+						<field name="miercoles"/>
+						<field name="jueves"/>
+						<field name="viernes"/>
+						<field name="sabado"/>
+						<field name="domingo"/>
+					</group>
+
 					<field name="descripcion"/>
 					<field name="docente_id"/>
 					<field name="state"/>
