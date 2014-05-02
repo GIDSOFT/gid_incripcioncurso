@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="universidad_view_search" model="ir.ui.view">
+			<field name="name">universidad_view_search</field>
+			<field name="model">aqui.modelo</field>
+			<field name="arch" type="xml">
+				<search string="Titulo Busqueda">
+					
+				</search>
+			</field>
+		</record>
+
+
+
+		<record id="universidad_view_form" model="ir.ui.view">
+			<field name="name">universidad_view_form</field>
+			<field name="model">aqui.modelo</field>
+			<field name="arch" type="xml">
+				<form string="Titulo Formulario">
+					
+				</form>
+			</field>
+		</record>
+					
+		<record id="universidad_view_tree" model="ir.ui.view">
+			<field name="name">universidad_view_tree</field>
+			<field name="model">aqui.modelo</field>
+			<field name="arch" type="xml">
+				<tree string="City">
+					
+				</tree>
+			</field>
+		</record>
+
+		<record id="action_universidad" model="ir.actions.act_window">
+			<field name="name">Universidad</field>
+			<field name="res_model">aqui.modelo</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem action="action_universidad" id="item_universidad" name="Universidad" parent="aqui.menu" />
+	</data>
+</openerp>

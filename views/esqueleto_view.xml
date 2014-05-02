@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- Definicion Elementos de Busqueda-->
+		<record id="universidad_view_search" model="ir.ui.view">
+			<field name="name">universidad_view_search</field>
+			<field name="model">gid.cursos.universidad</field>
+			<field name="arch" type="xml">
+				<search string="Titulo Busqueda">
+					<field name=""/>
+				</search>
+			</field>
+		</record>
+		<!-- Definicion Vista Formulario -->
+		<record id="universidad_view_form" model="ir.ui.view">
+			<field name="name">universidad_view_form</field>
+			<field name="model">gid.cursos.universidad</field>
+			<field name="arch" type="xml">
+				<form string="Titulo Formulario">
+					<field name="nanem"/>
+					<field name="telefono"/>
+					<field name=""/>
+				</form>
+			</field>
+		</record>
+		<!-- Definicio Vista Arbol (Lista) -->
+		<record id="universidad_view_tree" model="ir.ui.view">
+			<field name="name">universidad_view_tree</field>
+			<field name="model">gid.cursos.universidad</field>
+			<field name="arch" type="xml">
+				<tree string="City">
+					<field name=""/>
+					<field name=""/>
+				</tree>
+			</field>
+		</record>
+		<!-- Definicion Comportamiento Vistas Modelo -->
+		<record id="action_universidad" model="ir.actions.act_window">
+			<field name="name">Universidad</field>
+			<field name="res_model">gid.cursos.universidad</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<!-- Indicar submenu que mostrara vistas -->
+		<menuitem action="action_universidad" id="item_universidad" name="Universidad" parent="abc_administrativos_menu"/>
+	</data>
+</openerp>
