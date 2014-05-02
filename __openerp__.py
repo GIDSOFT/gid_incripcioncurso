@@ -9,5 +9,6 @@
 						'views/universidad_view.xml',
 						'views/curso_view.xml',	
 						'views/docente_view.xml',
+						'views/estudiante_view.xml',
 					],
 }
