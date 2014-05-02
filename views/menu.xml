@@ -2,7 +2,7 @@
 <openerp>
     <data>
         <!-- Acceso desde la barra superior -->
-        <menuitem name="Insercol" id="insercol_menu" sequence="15" />
-        <menuitem name="Configuration" id="insercol_configuration_menu"  parent="insercol_menu" />  
+        <menuitem name="Abc" id="abc_menu" sequence="15" />
+        <menuitem name="Administrativos" id="abc_administrativos_menu"  parent="abc_menu" />  
     </data>
 </openerp>
