@@ -4,5 +4,8 @@
 	'author'	:	'GIDSOFT',
 	'website'	:	'gidsoft.org',
 	'depends'	:	['base'],
-	'data'		:	['views/menu.xml'],
+	'data'		:	[
+						'views/menu.xml',
+						'views/universidad_view.xml',	
+					],
 }
