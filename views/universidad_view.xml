@@ -17,7 +17,8 @@
 			<field name="model">gid.cursos.universidad</field>
 			<field name="arch" type="xml">
 				<form string="Universidad">
-					<field name="logo"/>
+					<field name="logo" widget="image"/>
+					<newline/>
 					<field name="name"/>
 					<field name="codigo_entidad"/>
 					<field name="direccion"/>
