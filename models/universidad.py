@@ -1,4 +1,4 @@
-#-*- encoding utf-8 -*-
+# -*- coding: utf-8 -*-
 from osv import osv,fields
 
 class universidad(osv.Model):
@@ -7,11 +7,11 @@ class universidad(osv.Model):
 
 	_columns = {
 		'name':fields.char('Nombre',required=True,size=200),
-		'codigo_entidad':fields.char('Codigo',required=True),
-		'direccion':fields.char(u'Dirección',required=True,size=100),
-		'telefono':fields.char(u'Teléfono',required=True,size=100),
-		'ciudad' : fields.selection([('tulua', u'Tuluá'), ('cali', 'Cali'), ('buga', 'Buga'), ('sevilla', 'Sevilla')]),
-		'email':fields.char(u'E-mail',required=True,size=100),
+		'codigo_entidad':fields.char(u'Código',required=True),
+		'direccion':fields.char('Dirección',required=True,size=100),
+		'telefono':fields.char('Teléfono',required=True,size=100),
+		'ciudad' : fields.selection([('tulua', 'Tuluá'), ('cali', 'Cali'), ('buga', 'Buga'), ('sevilla', 'Sevilla')]),
+		'email':fields.char('E-mail',required=True,size=100),
 		'logo' : fields.binary(string='Logo', filters='*.png, *.jpeg'),
 		'active':fields.boolean('Active'),
 

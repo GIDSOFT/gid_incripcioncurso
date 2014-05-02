@@ -1,4 +1,4 @@
-#-*- encoding utf-8 -*-
+# -*- coding: utf-8 -*-
 from osv import osv,fields
 
 class estudiante(osv.Model):
@@ -11,7 +11,7 @@ class estudiante(osv.Model):
 		'identificacion' : fields.char(u'Identificación', size=11 ),
 		'direccion':fields.char(u'Dirección',required=True,size=100),
 		'telefono':fields.char(u'Teléfono',required=True,size=100),
-		'email':fields.char(u'E-mail',required=True,size=100),
+		'email':fields.char('E-mail',required=True,size=100),
 		'active':fields.boolean('Active'),
 
 	}

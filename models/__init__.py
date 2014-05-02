@@ -1,1 +1,3 @@
 import universidad
+import estudiante
+import curso
