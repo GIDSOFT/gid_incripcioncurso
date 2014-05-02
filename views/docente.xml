@@ -1,0 +1,49 @@
+<?xml version ="1.0" encoding= "utf8"?>
+<openerp>
+	<data >
+		<record id="docente_view_search" model="ir.ui.view">
+			<field name="name">docente_view_search</field>
+			<field name="model">gid.cursos.docente</field>
+			<field name="arch" type="xml">
+				<search string="Titulo Busqueda">
+					<field name="name"/>
+					<field name="identificacion"/>
+				</search>
+			</field>
+		</record>
+		<!-- Definicion Vista Formulario -->
+		<record id="docente_view_form" model="ir.ui.view">
+			<field name="name">docente_view_form</field>
+			<field name="model">gid.cursos.docente</field>
+			<field name="arch" type="xml">
+				<form string="Titulo Formulario">
+					<field name="name"/>
+					<field name="identificacion"/>
+					<field name="telefono"/>
+				</form>
+			</field>
+		</record>
+		<!-- Definicio Vista Arbol (Lista) -->
+		<record id="docente_view_tree" model="ir.ui.view">
+			<field name="name">docente_view_tree</field>
+			<field name="model">gid.cursos.docente</field>
+			<field name="arch" type="xml">
+				<tree string="Listado de docentes">
+					<field name="name"/>
+					<field name="telefono"/>
+					<field name="correo"/>
+					<fiel name="universidad_id"/>
+				</tree>
+			</field>
+		</record>
+		<!-- Definicion Comportamiento Vistas Modelo -->
+		<record id="action_docente" model="ir.actions.act_window">
+			<field name="name">docente</field>
+			<field name="res_model">gid.cursos.docente</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem action="action_docente" id="item_docente" name="docente" parent="abc_administrativos_menu"/>
+	</data>
+
+	</openerp>
