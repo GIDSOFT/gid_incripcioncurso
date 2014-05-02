@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- Definicion Elementos de Busqueda-->
+		<record id="curso_view_search" model="ir.ui.view">
+			<field name="name">curso_view_search</field>
+			<field name="model">gid.cursos.curso</field>
+			<field name="arch" type="xml">
+				<search string="Buscas Por: ">
+					<field name="codigo_curso"/>
+					<field name="name"/>
+				</search>
+			</field>
+		</record>
+		<!-- Definicion Vista Formulario -->
+		<record id="curso_view_form" model="ir.ui.view">
+			<field name="name">curso_view_form</field>
+			<field name="model">gid.cursos.curso</field>
+			<field name="arch" type="xml">
+				<form string="Inscripcion Curso">
+					<field name="codigo_curso"/>
+					<field name="name"/>
+					<field name="intensidad_horaria"/>
+					<field name="fecha_inicio"/>
+					<field name="fecha_fin"/>
+					<field name="lunes"/>
+					<field name="martes"/>
+					<field name="miercoles"/>
+					<field name="jueves"/>
+					<field name="viernes"/>
+					<field name="sabado"/>
+					<field name="domingo"/>
+					<field name="descripcion"/>
+					<field name="docente_id"/>
+					<field name="state"/>
+				</form>
+			</field>
+		</record>
+
+
+		<!-- Definicio Vista Arbol (Lista) -->
+		<record id="curso_view_tree" model="ir.ui.view">
+			<field name="name">curso_view_tree</field>
+			<field name="model">gid.cursos.curso</field>
+			<field name="arch" type="xml">
+				<tree string="Cursos">
+					<field name="codigo_curso"/>
+					<field name="name"/>
+					<field name="intensidad_horaria"/>
+					<field name="fecha_inicio"/>
+					<field name="fecha_fin"/>
+					<field name="docente_id"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- Definicion Comportamiento Vistas Modelo -->
+		<record id="action_curso" model="ir.actions.act_window">
+			<field name="name">Cursos</field>
+			<field name="res_model">gid.cursos.curso</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<!-- Indicar submenu que mostrara vistas -->
+		<menuitem action="action_curso" id="item_curso" name="Curso" parent="abc_administrativos_menu"/>
+	</data>
+</openerp>
